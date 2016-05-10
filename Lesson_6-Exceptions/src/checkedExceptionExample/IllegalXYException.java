@@ -1,6 +1,10 @@
 package checkedExceptionExample;
 
-public class IllegalXYException extends Exception { // checked
+//The class Exception and any subclasses that are not also subclasses of RuntimeException
+//are CHECKED EXCEPTIONS. Checked exceptions need to be declared in a method or constructor's 
+//'throws' clause if they can be thrown by the execution of the method or constructor and propagate 
+//outside the method or constructor boundary. They must be handles with a try/catch block.
+public class IllegalXYException extends Exception {
 
 	private static final long serialVersionUID = 1L;
 
